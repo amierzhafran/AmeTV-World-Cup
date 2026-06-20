@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AMETV - Subscription</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">AmeTV</div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="booking.html" class="active">Subscription</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero hero-secondary hero-mbappe">
+        <div class="hero-copy">
+          <p class="eyebrow">Ready to go</p>
+          <h1>Complete your subscription and secure the best World Cup experience.</h1>
+          <p>Fill in the details below and choose your ideal package for the tournament.</p>
+        </div>
+      </section>
+      <section class="section-overlap">
+        <form id="bookingForm" class="form-box">
+          <div class="form-grid">
+            <div class="input-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="Enter your full name" required />
+            </div>
+            <div class="input-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="Enter your email" required />
+            </div>
+            <div class="input-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="Enter your phone number" required />
+            </div>
+            <div class="input-group">
+              <label for="plan">Package Subscription <span class="optional">(optional)</span></label>
+              <select id="plan">
+                <option value="">No subscription selected</option>
+                <option value="20">Standard - RM 20</option>
+                <option value="50">Deluxe - RM 50</option>
+                <option value="80">Premium - RM 80</option>
+              </select>
+            </div>
+          </div>
+          <div class="pricing-panel">
+            <div class="pricing-row">
+              <span>Subtotal</span>
+              <strong>RM <span id="subtotal">0</span></strong>
+            </div>
+            <div class="pricing-row">
+              <span>Tax (3%)</span>
+              <strong>RM <span id="tax">0</span></strong>
+            </div>
+            <div class="pricing-row total-row">
+              <span>Total</span>
+              <strong>RM <span id="total">0</span></strong>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <p id="msg" class="form-message"></p>
+        </form>
+      </section>
+      <div id="notification" class="notification-modal">
+        <div class="notification-content">
+          <p id="notificationMessage"></p>
+          <button type="button" id="notificationOK" class="btn btn-primary">OK</button>
+        </div>
+      </div>
+    </main>
+    <footer>© 2026 AmeTV World Cup Broadcasting</footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
